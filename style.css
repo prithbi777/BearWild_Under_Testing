@@ -68,7 +68,7 @@
   #sliding-text1 {
     display: inline-block;
     position: relative;
-    animation: slide 3s 1;
+    animation: slide 2s 1;
   }
 
   @keyframes slide {
@@ -89,7 +89,7 @@
   #sliding-text2 {
     display: inline-block;
     position: relative;
-    animation: slide 2s 1;
+    animation: slide 1s 1;
   }
 
   @keyframes slide {
@@ -314,7 +314,7 @@ body {
     height: 100vh;
     background: linear-gradient(45deg, #000000, #000000, #003cff, black, #000000);
     background-size: 400% 400%; /* Make the gradient larger for smooth animation */
-    animation: gradientAnimation 8s ease infinite;
+    animation: gradientAnimation 6s ease infinite;
   }
   
   /* Keyframes for the gradient animation */
