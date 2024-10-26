@@ -68,7 +68,7 @@
   #sliding-text1 {
     display: inline-block;
     position: relative;
-    animation: slide 3s 1;
+    animation: slide 2s 1;
   }
 
   @keyframes slide {
@@ -89,7 +89,7 @@
   #sliding-text2 {
     display: inline-block;
     position: relative;
-    animation: slide 2s 1;
+    animation: slide 1s 1;
   }
 
   @keyframes slide {
@@ -353,7 +353,7 @@ body {
   height: 150px;
   object-fit: cover;
   border-radius: 3.5%; 
-  animation: float 5s linear infinite;
+  animation: float 8s linear infinite;
   opacity: 1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
