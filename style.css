@@ -1,0 +1,391 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(182, 182, 182) !important;
+    font-size: medium;
+    font-weight: 500;
+}
+
+
+
+/* #blinking-text {
+    animation: blink 1s steps(2, start) infinite;
+    color: red;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  } */
+
+
+
+  /* #color-change {
+    animation: colorShift 3s infinite;
+  }
+
+  @keyframes colorShift {
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: green;
+    }
+  } */
+
+
+
+
+
+
+
+/* with loop */
+  /* #sliding-text {
+    display: inline-block;
+    position: relative;
+    animation: slide 5s infinite;
+  }
+
+  @keyframes slide {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 50%;
+    }
+    100% {
+      left: 0;
+    }
+  }  */
+
+
+
+
+
+
+  #sliding-text1 {
+    display: inline-block;
+    position: relative;
+    animation: slide 3s 1;
+  }
+
+  @keyframes slide {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 50%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+
+
+
+  #sliding-text2 {
+    display: inline-block;
+    position: relative;
+    animation: slide 2s 1;
+  }
+
+  @keyframes slide {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 50%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+
+/* Reset body styling */
+
+  
+  #container {
+    position: relative;
+    /* width: 100%;
+    max-width: 00px;
+    margin: 100px auto; */
+    overflow: hidden;
+  }
+  
+  /* Sliding element */
+  #slide {
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen (left) */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  /* Apply when element enters the viewport */
+  #slide.slide-in {
+    transform: translateX(0); /* Slide into place */
+    opacity: 1;
+  }
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+  /* #typing-text {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    border-right: 2px solid black;
+    animation: typing 4s steps(30) forwards, blink-cursor 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-cursor {
+    50% {
+      border-color: transparent;
+    }
+  } */
+
+
+
+
+
+  #rotate-text {
+    display: inline-block;
+    font-size: 2rem;
+    animation: rotate3D 5s infinite linear;
+  }
+
+  @keyframes rotate3D {
+    0% {
+      transform: rotateX(0) rotateY(0);
+    }
+    50% {
+      transform: rotateX(180deg) rotateY(180deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+
+
+
+
+
+
+/* 
+  #gradient-text {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #44f000, #1900ff, #d10000);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientMove 3s ease-in-out infinite;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  } */
+
+
+
+
+
+  #wave-text {
+    display: inline-block;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  #wave-text span {
+    display: inline-block;
+    animation: wave 1s infinite ease-in-out;
+  }
+
+  #wave-text span:nth-child(1) { animation-delay: 0s; }
+  #wave-text span:nth-child(2) { animation-delay: 0.1s; }
+  #wave-text span:nth-child(3) { animation-delay: 0.2s; }
+  #wave-text span:nth-child(4) { animation-delay: 0.3s; }
+  #wave-text span:nth-child(5) { animation-delay: 0.4s; }
+
+  @keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+
+
+
+  /* #reveal-text {
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  #reveal-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation: reveal 2s ease-in-out forwards;
+  }
+
+  @keyframes reveal {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  } */
+
+
+
+
+
+
+  /* #glitch-text {
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    display: inline-block;
+  }
+
+  #glitch-text::before, #glitch-text::after {
+    content: 'Glitch';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation: glitch 1s infinite;
+  }
+
+  #glitch-text::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    animation-delay: 0.2s;
+  }
+
+  #glitch-text::after {
+    left: -2px;
+    text-shadow: 2px 0 blue;
+  }
+
+  @keyframes glitch {
+    0% { clip: rect(0, 100%, 20%, 0); }
+    50% { clip: rect(20%, 100%, 40%, 0); transform: translate(-5px, -5px); }
+    100% { clip: rect(40%, 100%, 60%, 0); transform: translate(5px, 5px); }
+  } */
+
+
+
+
+
+
+
+/* Reset and body setup */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #000000, #000000, #003cff, black, #000000);
+    background-size: 400% 400%; /* Make the gradient larger for smooth animation */
+    animation: gradientAnimation 14s ease infinite;
+  }
+  
+  /* Keyframes for the gradient animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+
+
+
+
+
+
+  /* Reset body styling */
+#noani {
+  /* margin: 0;
+  height: 100vh; */
+  background-image: url('nature.jpg');
+  overflow: hidden;
+  position: relative;
+}
+
+/* Common styling for all floating images */
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12, #img13, #img14, #img15 {
+  position: absolute;
+  width: auto;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 3.5%; 
+  animation: float 5s linear infinite;
+  opacity: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Specific position and animation delay for each image */
+#img1 { left: 10%; animation-delay: 0s; }
+#img2 { left: 20%; animation-delay: 3s; }
+#img3 { left: 30%; animation-delay: 6s; }
+#img4 { left: 40%; animation-delay: 9s; }
+#img5 { left: 50%; animation-delay: 12s; }
+#img6 { left: 60%; animation-delay: 0s; }
+#img7 { left: 70%; animation-delay: 3s; }
+#img8 { left: 80%; animation-delay: 6s; }
+#img9 { left: 90%; animation-delay: 9s; }
+#img10 { left: 100%; animation-delay: 12s; }
+#img11 { left: 60%; animation-delay: 0s; }
+#img12 { left: 70%; animation-delay: 3s; }
+#img13 { left: 80%; animation-delay: 6s; }
+#img14 { left: 90%; animation-delay: 9s; }
+#img15 { left: 100%; animation-delay: 12s; }
+
+
+
+/* Keyframes to float images from bottom to top */
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg); /* Start below the viewport */
+  }
+  50% {
+    transform: translateY(50vh) rotate(180deg); /* Rotate halfway up */
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg); /* Float off the top */
+  }
+}
