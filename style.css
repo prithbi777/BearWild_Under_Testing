@@ -314,7 +314,7 @@ body {
     height: 100vh;
     background: linear-gradient(45deg, #000000, #000000, #003cff, black, #000000);
     background-size: 400% 400%; /* Make the gradient larger for smooth animation */
-    animation: gradientAnimation 14s ease infinite;
+    animation: gradientAnimation 8s ease infinite;
   }
   
   /* Keyframes for the gradient animation */
