@@ -23,5 +23,5 @@
 - **Wildlife Showcase:** Displays images and information about various animals.
 - **Interactive Elements:** Engages users with interactive components for an enriched browsing experience.
 
-## 📂 Repository Structure
+
 
