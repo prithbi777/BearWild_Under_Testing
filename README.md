@@ -9,7 +9,6 @@
 
 ## 🌐 Live Demo: https://prithbi777.github.io/BearWild_Under_Testing/
 
-*Note: The project is currently under testing and may not have a live demo available at this time.*
 
 ## 🛠️ Technologies Used
 
