@@ -7,7 +7,7 @@
 
 **BearWild** is a responsive website dedicated to showcasing wildlife, providing information and visuals of various animal species. This project emphasizes responsive design principles to ensure optimal viewing experiences across a range of devices, from desktops to mobile phones.
 
-## 🌐 Live Demo
+## 🌐 Live Demo: https://prithbi777.github.io/BearWild_Under_Testing/
 
 *Note: The project is currently under testing and may not have a live demo available at this time.*
 
